@@ -1,0 +1,45 @@
+Problem Statement:
+You are required to demonstrate your understanding of Java packages, inheritance, access modifiers, and method overriding by building a system to manage different types of vehicles and their utility operations.
+
+Requirements:
+1. Create a Package Structure:
+	Create a Java package named com.yourname.vehicles.
+	Inside this package, create two sub-packages named types and utilities.
+2. Vehicles Package (types):
+	Inside the types package, create a class named Vehicle.
+Attributes:
+	make (private, String): Manufacturer of the vehicle.
+	model (private, String): Model of the vehicle.
+	year (private, int): Year of manufacture.
+Provide getter and setter methods for each attribute.
+Implement a method displayDetails() that prints the vehicle's details.
+3. Subclasses:
+	Create two subclasses within the types package: Car and Truck. Each subclass should extend the Vehicle class.
+Car Class:
+	Add specific attributes:
+		seatingCapacity (private, int): Number of seats in the car.
+		fuelType (private, String): Type of fuel used by the car.
+		Provide getter and setter methods for these attributes.
+		Override the displayDetails() method to include additional car-specific details.
+Truck Class:
+	Add specific attributes:
+		cargoCapacity (private, double): Maximum cargo capacity of the truck in tons.
+		numberOfAxles (private, int): Number of axles the truck has.
+	Provide getter and setter methods for these attributes.
+	Override the displayDetails() method to include truck-specific information.
+4. Utilities Package:
+	Inside the utilities package, create a class named VehicleUtilities.
+In this class:
+	Implement methods that operate on Vehicle objects:
+		getVehicleAge(Vehicle vehicle): Calculate the age of a vehicle based on the current year.
+		isOldModel(Vehicle vehicle): Determine if a vehicle is considered "old" (older than 10 years).
+Demonstrate the proper use of access modifiers when accessing vehicle attributes.
+5. Main Class:
+	Create a main class named VehicleMain outside of any package.
+	In the VehicleMain class:
+	Create instances of Car and Truck.
+	Use the methods in VehicleUtilities to perform operations on the Car and Truck objects.
+Demonstrate the use of method overriding by calling displayDetails() on both Car and Truck instances.
+6. Documentation:
+	Provide Javadoc comments for each class, method, and attribute.
+	Emphasize the use of access modifiers and how they restrict or allow access to class members across different packages.
